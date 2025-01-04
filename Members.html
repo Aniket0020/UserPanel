@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Tap Savvy</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+
+
+
+</head>
+
+<body class="theme-light">
+
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+
+        <div class="header header-fixed header-logo-center bg-white">
+            <a href="index.html" class="header-title">User Panel</a>
+
+            <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i
+                    class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i
+                    class="fas fa-moon"></i></a>
+        </div>
+
+        <div id="footer-bar" class="footer-bar-5 ">
+            <a href="Ads.html" data-menu="Ads" style="width: 60px;"><i class="fa-solid fa-bullhorn"></i><span>Ads
+                </span></a>
+            <a href="index.html" class=""><i class="fa fa-user"></i><span>
+                    Proflie</span></a>
+            <a href="Members.html" data-menu="Members" style="width: 60px;"><i
+                    class="fa-solid fa-user-group"></i><span>Members
+                </span></a>
+
+            <a href="Category.html" data-menu="Category" style="width: 60px;"><i
+                    class="fa-solid fa-shopping-cart"></i><span>Category</span></a>
+
+        </div>
+
+
+
+
+
+
+        <div class="page-content header-clear-medium ">
+
+
+            <section id="membersDetailsSection" class="container py-5">
+                <h2 class="text-center mb-4">Member Details</h2>
+
+                <!-- Member Category -->
+                <div class="mb-3">
+                    <label for="memberCategory" class="form-label">Member Category:</label>
+                    <input type="text" id="memberCategory" placeholder="Enter member category" class="form-control">
+                </div>
+
+                <!-- Member Name -->
+                <div class="mb-3">
+                    <label for="memberName" class="form-label">Member Name:</label>
+                    <input type="text" id="memberName" placeholder="Enter member name" class="form-control">
+                </div>
+
+                <!-- Nature of Business -->
+                <div class="mb-3">
+                    <label for="natureOfBusiness" class="form-label">Nature of Business:</label>
+                    <input type="text" id="natureOfBusiness" placeholder="Enter nature of business"
+                        class="form-control">
+                </div>
+
+                <!-- Company Name -->
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company Name:</label>
+                    <input type="text" id="company" placeholder="Enter company name" class="form-control">
+                </div>
+
+                <!-- Email ID -->
+                <div class="mb-3">
+                    <label for="emailId" class="form-label">Email ID:</label>
+                    <input type="email" id="emailId" placeholder="Enter email ID" class="form-control">
+                </div>
+
+                <!-- Whatsapp Number -->
+                <div class="mb-3">
+                    <label for="whatsappNumber" class="form-label">Whatsapp Number:</label>
+                    <input type="tel" id="whatsappNumber" placeholder="Enter whatsapp number" class="form-control">
+                </div>
+
+                <!-- Digital Card Link -->
+                <div class="mb-3">
+                    <label for="cardLink" class="form-label">Digital Card Link:</label>
+                    <input type="url" id="cardLink" placeholder="Enter digital card link" class="form-control">
+                </div>
+
+                <!-- Profile Image -->
+                <div class="mb-3">
+                    <label for="profileImage" class="form-label">Profile Image:</label>
+                    <input type="file" id="profileImage" accept="image/*" class="form-control">
+                </div>
+
+                <!-- Save Button -->
+                <button id="saveMemberDetails" class="btn btn-primary w-100">Save Member</button>
+            </section>
+
+
+
+
+
+        </div>
+
+        <!-- Page content ends here-->
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -43,7 +43,7 @@
         <div id="footer-bar" class="footer-bar-5 ">
             <a href="Ads.html" data-menu="Ads" style="width: 60px;"><i class="fa-solid fa-bullhorn"></i><span>Ads
                 </span></a>
-            <a href="#" class=""><i class="fa fa-user"></i><span>
+            <a href="index.html" class=""><i class="fa fa-user"></i><span>
                     Proflie</span></a>
             <a href="Members.html" data-menu="Members" style="width: 60px;"><i
                     class="fa-solid fa-user-group"></i><span>Members
@@ -61,60 +61,33 @@
 
         <div class="page-content header-clear-medium ">
 
-            <div class="container py-5">
+
+            <section id="AdSection" class="container py-5">
+                <h2 class="text-center mb-4">Ads</h2>
+
+                <!-- Member Name -->
+                <div class="mb-3">
+                    <label for="memberName" class="form-label">Member Name:</label>
+                    <input type="text" id="memberName" placeholder="Enter member name" class="form-control">
+                </div>
+
+                <!-- Member Company -->
+                <div class="mb-3">
+                    <label for="memberCompany" class="form-label">Member Company:</label>
+                    <input type="text" id="memberCompany" placeholder="Enter member company" class="form-control">
+                </div>
+
+                <!-- Upload Ad -->
+                <div class="mb-3">
+                    <label for="adImage" class="form-label">Upload Ad:</label>
+                    <input type="file" id="adImage" accept="image/*" class="form-control">
+                </div>
+
+                <!-- Save Button -->
+                <button id="saveMemberData" class="btn btn-primary w-100">Save Ad</button>
+            </section>
 
 
-                <!-- Upload Banner Section -->
-                <section id="uploadBanner" class="mb-4">
-                    <h3 class="h4 mb-3">Upload Banner</h3>
-                    <label for="bannerImage" class="form-label">Choose Banner Image:</label>
-                    <input type="file" id="bannerImage" accept="image/*" class="form-control mb-3">
-                    <button id="uploadBannerBtn" class="btn btn-primary  w-25">Add</button>
-                </section>
-
-                <!-- Upload Favicon Section -->
-                <section id="uploadFavicon" class="mb-4">
-                    <h3 class="h4 mb-3">Upload Favicon</h3>
-                    <label for="faviconImage" class="form-label">Choose Favicon Image:</label>
-                    <input type="file" id="faviconImage" accept="image/*" class="form-control mb-3">
-                    <button id="uploadFaviconBtn" class="btn btn-primary w-25">Add </button>
-                </section>
-
-                <!-- Contact Information Section -->
-                <section id="contactInfo" class="mb-4">
-                    <h3 class="h4 mb-4">Contact Information</h3>
-
-                    <!-- Phone Number -->
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label">Add Phone Number:</label>
-                        <input type="text" id="phoneNumber" placeholder="Enter phone number" class="form-control mb-2">
-                        <button id="savePhoneNumber" class="btn btn-primary w-25">Add</button>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Add Email:</label>
-                        <input type="email" id="email" placeholder="Enter email" class="form-control mb-2">
-                        <button id="saveEmail" class="btn btn-primary w-25">Add</button>
-                    </div>
-
-                    <!-- Social Links -->
-                    <h3 class="h4 mb-3">Social Media Links</h3>
-                    <div class="mb-3">
-                        <label for="facebook" class="form-label">Facebook:</label>
-                        <input type="url" id="facebook" placeholder="Enter Facebook URL" class="form-control mb-2">
-                    </div>
-                    <div class="mb-3">
-                        <label for="twitter" class="form-label">Twitter:</label>
-                        <input type="url" id="twitter" placeholder="Enter Twitter URL" class="form-control mb-2">
-                    </div>
-                    <div class="mb-3">
-                        <label for="instagram" class="form-label">Instagram:</label>
-                        <input type="url" id="instagram" placeholder="Enter Instagram URL" class="form-control mb-2">
-                    </div>
-                    <button id="saveSocialLinks" class="btn btn-primary w-25">Add Links</button>
-                </section>
-            </div>
 
 
 
