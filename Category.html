@@ -29,7 +29,7 @@
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
-    <div id="page">
+    <div id="page" class="bg-white">
 
         <div class="header header-fixed header-logo-center bg-white">
             <a href="index.html" class="header-title">User Panel</a>
@@ -65,13 +65,17 @@
                 <h2 class="text-center mb-4">Category</h2>
 
                 <!-- Category Name -->
-                <div class="mb-3">
-                    <label for="categoryName" class="form-label">Category Name:</label>
-                    <input type="text" id="categoryName" placeholder="Enter category name" class="form-control">
+                <div class="form-field form-name mb-3">
+                    <label for="category" class="color-theme form-label">Add Category:<span>(required)</span></label>
+                    <input type="text" id="category" name="category" class="form-control mb-2 round-small" required />
                 </div>
 
+
+
                 <!-- Add Category Button -->
-                <button id="addCategoryBtn" class="btn btn-primary w-100">Add Category</button>
+                <button id="addCategoryBtn"
+                    class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-sm shadow-xl contactSubmitButton">Add
+                    Category</button>
             </section>
 
 

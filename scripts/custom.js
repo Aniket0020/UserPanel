@@ -1622,3 +1622,144 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const imageInput = document.getElementById('imageInput');
+    const imagePreview = document.getElementById('imagePreview');
+    const uploadForm = document.getElementById('uploadForm');
+
+    imageInput.addEventListener('change', function(event) {
+        const files = event.target.files;
+
+     
+        imagePreview.innerHTML = '';
+
+        if (files && files[0]) {
+            const reader = new FileReader();
+            const img = document.createElement('img');
+
+            reader.onload = function(e) {
+                img.src = e.target.result;
+                img.alt = 'Selected Image';
+                img.classList.add('img-fluid', 'rounded-circle');
+                img.style.maxHeight = '150px';
+                img.style.maxWidth = '150px';
+                img.style.minHeight = '150px';
+                img.style.minWidth = '150px';
+                img.style.objectFit = 'cover';
+
+            
+                img.onload = function() {
+                    if (img.naturalWidth < 150 || img.naturalHeight < 150) {
+                        alert('Image dimensions must be at least 150x150 pixels.');
+                        imageInput.value = ''; 
+                        imagePreview.innerHTML = '<span class="text-muted">No image selected</span>';
+                    } else {
+                        imagePreview.appendChild(img);
+                    }
+                };
+            };
+
+            reader.readAsDataURL(files[0]);
+        } else {
+            imagePreview.innerHTML = '<span class="text-muted">No image selected</span>';
+        }
+    });
+
+    
+    uploadForm.addEventListener('submit', function(event) {
+        if (!imageInput.value) {
+            alert('Please upload a valid image.');
+            event.preventDefault();
+        }
+    });
+});
+
+
+// // Memberform validation
+        
+//  document.getElementById("uploadForm").addEventListener("submit", function (e) {
+//         // Get field values
+//         const category = document.getElementById("category").value.trim();
+//         const name = document.getElementById("name").value.trim();
+//         const business = document.getElementById("business").value.trim();
+//         const companyName = document.getElementById("companyName").value.trim();
+//         const email = document.getElementById("email").value.trim();
+//         const whatsapp = document.getElementById("whatsapp").value.trim();
+//         const digitalCard = document.getElementById("digitalCard").value.trim();
+
+       
+//         let errorMessage = "";
+
+      
+//         if (category === "") {
+//             errorMessage += "Category is required.\n";
+//         }
+
+     
+//         if (name === "") {
+//             errorMessage += "Name is required.\n";
+//         }
+
+     
+//         if (business === "") {
+//             errorMessage += "Business is required.\n";
+//         }
+
+      
+//         if (companyName === "") {
+//             errorMessage += "Company Name is required.\n";
+//         }
+
+       
+//         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//         if (email === "" || !emailRegex.test(email)) {
+//             errorMessage += "Please enter a valid email address.\n";
+//         }
+
+      
+//         const whatsappRegex = /^[0-9]{10,15}$/;
+//         if (whatsapp === "" || !whatsappRegex.test(whatsapp)) {
+//             errorMessage += "WhatsApp Number must be a valid number (10-15 digits).\n";
+//         }
+
+        
+//         if (digitalCard === "") {
+//             errorMessage += "DigitalCard is required.\n";
+//         }
+
+      
+//         if (errorMessage !== "") {
+//             e.preventDefault(); 
+//             alert(errorMessage); 
+//         }
+//  });
+    
+// //  Ad
+
+ 
+//     document.getElementById('adForm').addEventListener('submit', function (event) {
+//         event.preventDefault(); 
+
+       
+//         const memberName = document.getElementById('memberName').value.trim();
+//         const memberCompany = document.getElementById('memberCompany').value.trim();
+//         const adFile = document.getElementById('Ad').files[0];
+
+//        console.log(memberName);
+       
+//         if (memberName === '') {
+//             alert('Member Name is required.');
+//             return;
+//         }
+//         if (!memberCompany) {
+//             alert('Member Company is required.');
+//             return;
+//         }
+//         if (!adFile) {
+//             alert('Ad file is required.');
+//             return;
+//         }
+
+        
+//         this.submit();
+//     });

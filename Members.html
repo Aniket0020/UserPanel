@@ -23,13 +23,13 @@
 
 </head>
 
-<body class="theme-light">
+<body class="theme-light  ">
 
     <div id="preloader">
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
-    <div id="page">
+    <div id="page" class=" bg-white">
 
         <div class="header header-fixed header-logo-center bg-white">
             <a href="index.html" class="header-title">User Panel</a>
@@ -59,66 +59,58 @@
 
 
 
-        <div class="page-content header-clear-medium ">
+        <div class="page-content header-clear-medium  m-4 ">
+            <h2 class="my-2 text-center">Members Details</h2>
 
+            <form action="" method="post" class="contactForm" id="uploadForm">
+                <fieldset>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="Category">Category:<span>(required)</span></label>
+                        <input type="text" name="Category" value="" class="round-small" id="category" />
+                    </div>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="Name">Name:<span>(required)</span></label>
+                        <input type="text" name="Name" value="" class="round-small" id="name" />
+                    </div>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="Business">Business:<span>(required)</span></label>
+                        <input type="text" name="Business" value="" class="round-small" id="business" />
+                    </div>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="CompanyName">Company Name:<span>(required)</span></label>
+                        <input type="text" name="CompanyName" value="" class="round-small" id="companyName" />
+                    </div>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="Email">Email:<span>(required)</span></label>
+                        <input type="text" name="Email" value="" class="round-small" id="email" />
+                    </div>
 
-            <section id="membersDetailsSection" class="container py-5">
-                <h2 class="text-center mb-4">Member Details</h2>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="WhatsApp">WhatsApp No:<span>(required)</span></label>
+                        <input type="text" name="WhatsApp" value="" class="round-small" id="whatsapp" />
+                    </div>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="digitalCard">DigitalCard:<span>(required)</span></label>
+                        <input type="text" name="digitalCard" value="" class="round-small" id="digitalCard" />
+                    </div>
+                    <div class="form-field form-name">
+                        <label class="color-theme" for="Profile">Profile Image:<span>(required)</span></label>
+                        <input class="form-control" type="file" id="imageInput" name="image" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Image Preview:</label>
+                        <div id="imagePreview" class="rounded-circle p-3 text-center m-auto">
+                            <span class="text-muted">No image selected</span>
+                        </div>
+                    </div>
 
-                <!-- Member Category -->
-                <div class="mb-3">
-                    <label for="memberCategory" class="form-label">Member Category:</label>
-                    <input type="text" id="memberCategory" placeholder="Enter member category" class="form-control">
-                </div>
-
-                <!-- Member Name -->
-                <div class="mb-3">
-                    <label for="memberName" class="form-label">Member Name:</label>
-                    <input type="text" id="memberName" placeholder="Enter member name" class="form-control">
-                </div>
-
-                <!-- Nature of Business -->
-                <div class="mb-3">
-                    <label for="natureOfBusiness" class="form-label">Nature of Business:</label>
-                    <input type="text" id="natureOfBusiness" placeholder="Enter nature of business"
-                        class="form-control">
-                </div>
-
-                <!-- Company Name -->
-                <div class="mb-3">
-                    <label for="company" class="form-label">Company Name:</label>
-                    <input type="text" id="company" placeholder="Enter company name" class="form-control">
-                </div>
-
-                <!-- Email ID -->
-                <div class="mb-3">
-                    <label for="emailId" class="form-label">Email ID:</label>
-                    <input type="email" id="emailId" placeholder="Enter email ID" class="form-control">
-                </div>
-
-                <!-- Whatsapp Number -->
-                <div class="mb-3">
-                    <label for="whatsappNumber" class="form-label">Whatsapp Number:</label>
-                    <input type="tel" id="whatsappNumber" placeholder="Enter whatsapp number" class="form-control">
-                </div>
-
-                <!-- Digital Card Link -->
-                <div class="mb-3">
-                    <label for="cardLink" class="form-label">Digital Card Link:</label>
-                    <input type="url" id="cardLink" placeholder="Enter digital card link" class="form-control">
-                </div>
-
-                <!-- Profile Image -->
-                <div class="mb-3">
-                    <label for="profileImage" class="form-label">Profile Image:</label>
-                    <input type="file" id="profileImage" accept="image/*" class="form-control">
-                </div>
-
-                <!-- Save Button -->
-                <button id="saveMemberDetails" class="btn btn-primary w-100">Save Member</button>
-            </section>
-
-
+                    <div class="form-button">
+                        <input type="submit"
+                            class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-sm shadow-xl contactSubmitButton"
+                            value="Add Member" />
+                    </div>
+                </fieldset>
+            </form>
 
 
 

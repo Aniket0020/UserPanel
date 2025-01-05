@@ -29,7 +29,7 @@
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
-    <div id="page">
+    <div id="page" class="bg-white">
 
         <div class="header header-fixed header-logo-center bg-white">
             <a href="index.html" class="header-title">User Panel</a>
@@ -65,27 +65,40 @@
             <section id="AdSection" class="container py-5">
                 <h2 class="text-center mb-4">Ads</h2>
 
-                <!-- Member Name -->
-                <div class="mb-3">
-                    <label for="memberName" class="form-label">Member Name:</label>
-                    <input type="text" id="memberName" placeholder="Enter member name" class="form-control">
-                </div>
 
-                <!-- Member Company -->
-                <div class="mb-3">
-                    <label for="memberCompany" class="form-label">Member Company:</label>
-                    <input type="text" id="memberCompany" placeholder="Enter member company" class="form-control">
-                </div>
+                <form id="adForm">
 
-                <!-- Upload Ad -->
-                <div class="mb-3">
-                    <label for="adImage" class="form-label">Upload Ad:</label>
-                    <input type="file" id="adImage" accept="image/*" class="form-control">
-                </div>
 
-                <!-- Save Button -->
-                <button id="saveMemberData" class="btn btn-primary w-100">Save Ad</button>
+                    <div class="form-field form-name mb-3">
+                        <label for="memberName" class="color-theme form-label">Member
+                            Name:<span>(required)</span></label>
+                        <input type="text" id="memberName" name="memberName" class="form-control mb-2 round-small"
+                            required />
+                    </div>
+
+
+                    <div class="form-field form-name mb-3">
+                        <label for="memberCompany" class="color-theme form-label">Member
+                            Company:<span>(required)</span></label>
+                        <input type="text" id="memberCompany" name="memberCompany" class="form-control mb-2 round-small"
+                            required />
+                    </div>
+
+
+                    <section id="Ad" class="mb-4">
+                        <label for="Ad" class="color-theme form-label">Upload Ad</label>
+                        <input type="file" id="Ad" name="Ad" class="form-control mb-3" required />
+                    </section>
+
+
+                    <button type="submit" id="saveMemberData"
+                        class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-sm shadow-xl contactSubmitButton">Save
+                        Ad</button>
+
+                </form>
+
             </section>
+
 
 
 
@@ -93,30 +106,6 @@
 
         </div>
 
-        <!-- Page content ends here-->
-
-        <!-- contacts-->
-
-
-        <!-- social -->
-        <!-- <div id="Category" class="menu menu-box-bottom rounded-0" data-menu-load="category.html" data-menu-width="100%"
-            data-menu-active="nav-pages"></div>
-
-         Links -->
-        <!-- <div id="Members" class="menu menu-box-bottom rounded-0" data-menu-load="Members.html" data-menu-width="100%"
-            data-menu-active="nav-pages"></div> -->
-        <!-- Email -->
-        <!-- <div id="Ads" class="menu menu-box-bottom rounded-0" data-menu-load="Ads.html" data-menu-width="100%"
-            data-menu-active="nav-pages"></div> -->
-
-        <!-- Share Menu-->
-        <!-- <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html"
-            data-menu-height="370">
-        </div> -->
-
-        <!-- Colors Menu-->
-        <!-- <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html"
-            data-menu-height="480"></div> -->
 
 
     </div>

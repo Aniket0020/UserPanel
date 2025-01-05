@@ -29,7 +29,7 @@
         <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
-    <div id="page">
+    <div id="page " class=" bg-white">
 
         <div class="header header-fixed header-logo-center bg-white">
             <a href="index.html" class="header-title">User Panel</a>
@@ -59,61 +59,74 @@
 
 
 
-        <div class="page-content header-clear-medium ">
+        <div class="page-content header-clear-medium m-4">
 
-            <div class="container py-5">
-                <h2 class="text-center mb-4">Profile</h2>
+
+
+
+
+            <h2 class="text-center mb-4">Profile</h2>
+            <form id="profileForm" action="" method="post" enctype="multipart/form-data">
                 <!-- Upload Banner Section -->
                 <section id="uploadBanner" class="mb-4">
-                    <h3 class="h4 mb-3">Upload Banner</h3>
-                    <label for="bannerImage" class="form-label">Choose Banner Image:</label>
-                    <input type="file" id="bannerImage" accept="image/*" class="form-control mb-3">
-                    <button id="uploadBannerBtn" class="btn btn-primary  w-25">Add</button>
+
+                    <label for="bannerImage" class="color-theme form-label">Upload Banner</label>
+                    <input type="file" id="bannerImage" name="bannerImage" accept="image/*" class="form-control mb-3" />
                 </section>
 
                 <!-- Upload Favicon Section -->
                 <section id="uploadFavicon" class="mb-4">
-                    <h3 class="h4 mb-3">Upload Favicon</h3>
-                    <label for="faviconImage" class="form-label">Choose Favicon Image:</label>
-                    <input type="file" id="faviconImage" accept="image/*" class="form-control mb-3">
-                    <button id="uploadFaviconBtn" class="btn btn-primary w-25">Add </button>
+
+                    <label for="faviconImage" class=" color-theme form-label">Upload Favicon</label>
+                    <input type="file" id="faviconImage" name="faviconImage" accept="image/*"
+                        class="form-control mb-3" />
                 </section>
 
                 <!-- Contact Information Section -->
                 <section id="contactInfo" class="mb-4">
-                    <h3 class="h4 mb-4">Contact Information</h3>
 
                     <!-- Phone Number -->
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label">Add Phone Number:</label>
-                        <input type="text" id="phoneNumber" placeholder="Enter phone number" class="form-control mb-2">
-                        <button id="savePhoneNumber" class="btn btn-primary w-25">Add</button>
+                    <div class="form-field form-name mb-3">
+                        <label for="phoneNumber" class="color-theme form-label">Add Phone
+                            Number:<span>(required)</span></label>
+                        <input type="text" id="phoneNumber" name="phoneNumber""
+                            class=" form-control mb-2 round-small" required />
                     </div>
 
                     <!-- Email -->
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Add Email:</label>
-                        <input type="email" id="email" placeholder="Enter email" class="form-control mb-2">
-                        <button id="saveEmail" class="btn btn-primary w-25">Add</button>
+                    <div class="form-field form-name mb-3">
+                        <label for="email" class="color-theme form-label">Add Email:<span>(required)</span></label>
+                        <input type="email" id="email" name="email" "
+                            class=" form-control mb-2 round-small" required />
                     </div>
 
                     <!-- Social Links -->
-                    <h3 class="h4 mb-3">Social Media Links</h3>
-                    <div class="mb-3">
+
+                    <div class="form-field form-name mb-3">
                         <label for="facebook" class="form-label">Facebook:</label>
-                        <input type="url" id="facebook" placeholder="Enter Facebook URL" class="form-control mb-2">
+                        <input type="url" id="facebook" name="facebook" "
+                            class=" form-control mb-2 round-small" />
                     </div>
-                    <div class="mb-3">
+                    <div class="form-field form-name mb-3">
                         <label for="twitter" class="form-label">Twitter:</label>
-                        <input type="url" id="twitter" placeholder="Enter Twitter URL" class="form-control mb-2">
+                        <input type="url" id="twitter" name="twitter" "
+                            class=" form-control mb-2 round-small" />
                     </div>
-                    <div class="mb-3">
+                    <div class="form-field form-name mb-3">
                         <label for="instagram" class="form-label">Instagram:</label>
-                        <input type="url" id="instagram" placeholder="Enter Instagram URL" class="form-control mb-2">
+                        <input type="url" id="instagram" name="instagram" "
+                            class=" form-control mb-2 round-small" />
                     </div>
-                    <button id="saveSocialLinks" class="btn btn-primary w-25">Add Links</button>
                 </section>
-            </div>
+
+                <!-- Submit Button -->
+                <div class="form-button">
+                    <input type="submit"
+                        class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-sm shadow-xl contactSubmitButton"
+                        value="Save" />
+                </div>
+            </form>
+
 
 
 
